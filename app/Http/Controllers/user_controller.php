@@ -25,8 +25,9 @@ class user_controller extends Controller
     }
     
     public function view_records(){
-        $client=Auth::user()->client->records;
-        return view('user.view_records')->with('records',$client);
+        $client=GarbageRecord::where('client_id', Auth::user()->client->id)->get();
+        //dd($client);
+        return view('user.view_records')->with(['records' => $client]);
     }
 
     public function delete_record(Request $request){

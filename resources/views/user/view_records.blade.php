@@ -4,7 +4,7 @@
         <div style="text-align: center">
             <h1>Your Garbage Records</h1>
         </div>
-        <a href="{{route('add_garbage')}}" class="btn btn-info">Add Record</a>
+        <a href="{{route('add.garbage')}}" class="btn btn-info">Add Record</a>
         <br><br>
         <table class="table" width="100%">
             <tr>

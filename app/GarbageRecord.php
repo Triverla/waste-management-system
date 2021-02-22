@@ -2,11 +2,14 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model;
 
 class GarbageRecord extends Model
 {
-    protected $table='garbage_record';
+    protected $connection = 'mongodb';
+
+    protected $collection = 'garbage_record';
+    //protected $table='garbage_record';
 
     public function client()
     {

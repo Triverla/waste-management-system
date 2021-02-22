@@ -3,6 +3,7 @@
 namespace App;
 
 use Jenssegers\Mongodb\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\HybridRelations;
 
 class CollectionRecord extends Model
 {

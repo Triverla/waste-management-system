@@ -10,7 +10,7 @@
                 {{csrf_field()}}
                 <div class="form-group">
                     <label for="exampleInputEmail1">Garbage Amount</label>
-                    <input type="number" step="0.01" class="form-control" name="amount" id="amount" placeholder="kg">
+                    <input id="garbage_weight" type="number" step="0.01" class="form-control" name="amount" placeholder="kg">
                 </div>
                 
                 <button type="submit" class="btn btn-default">Add</button>
